@@ -1,5 +1,5 @@
 :root {
-    --form-width: 60%;
+    --form-width: 55%;
 }
 
 @font-face {
@@ -65,26 +65,39 @@
     font-display: swap;
 }
 
-
 .container {
     display: flex;
     flex-flow: vertical nowrap;
     height: 100vh;
-    width: 100vw;
+    width: 100vh;
+    margin: 0;
 }
 
-div {
-    border: 1px solid blue;
+.background-side {
     width: calc(100% - var(--form-width));
+    background-image: url(../images/tennis_poster_background.jpg);
+    background-size: 100% 100%;
+    position: relative;
 }
 
 .form-side {
-    border: 1px solid pink;
     width: var(--form-width);
     display: flex;
     flex-flow: column nowrap;
 }
 
-.description {
+.attribution,
+.attribution > a {
+    color: white;
+}
 
+.attribution {
+    position: absolute;
+    bottom: 1%;
+    right: 2%;
+    font-size: .8rem;
+}
+
+.description {
+    
 }
