@@ -1,0 +1,90 @@
+:root {
+    --form-width: 60%;
+}
+
+@font-face {
+    font-family: 'Cheri Liney';
+    src: url('CheriLiney.woff2') format('woff2'),
+        url('CheriLiney.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cheri';
+    src: url('Cheri.woff2') format('woff2'),
+        url('Cheri.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'APOLLO';
+    src: url('APOLLO-Regular.woff2') format('woff2'),
+        url('APOLLO-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Paper Daisy DEMO';
+    src: url('PaperDaisyDEMO.woff2') format('woff2'),
+        url('PaperDaisyDEMO.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Simple Handmade';
+    src: url('SimpleHandmadeRegular.woff2') format('woff2'),
+        url('SimpleHandmadeRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DK Lemon Yellow Sun';
+    src: url('DKLemonYellowSun.woff2') format('woff2'),
+        url('DKLemonYellowSun.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DUMERO';
+    src: url('DUMERORegular.woff2') format('woff2'),
+        url('DUMERORegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+.container {
+    display: flex;
+    flex-flow: vertical nowrap;
+    height: 100vh;
+    width: 100vw;
+}
+
+div {
+    border: 1px solid blue;
+    width: calc(100% - var(--form-width));
+}
+
+.form-side {
+    border: 1px solid pink;
+    width: var(--form-width);
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.description {
+
+}
