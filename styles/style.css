@@ -76,6 +76,15 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Inter Variable';
+    src: url('../fonts/InterVariable.woff2') format('woff2'),
+        url('../fonts/InterVariable.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 .container {
     display: flex;
     flex-flow: vertical nowrap;
@@ -167,12 +176,13 @@
 
 .form-header {
     height: var(--form-header-footer-height);
-    font-family: "APOLLO";
+    font-family: "Inter Variable";
     background-color:rgb(245, 245, 245);
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-end;
     padding-left: 10%;
+    font-size: .5rem;
 }
 
 .header-part-one {
@@ -185,8 +195,49 @@
 
 form {
     height: calc(100% - 2 * var(--form-header-footer-height));
+    display: flex;
+    flex-flow: column nowrap;
+    font-family: "Inter Variable";
+}
+
+.form-heading {
+    font-size: 20px;
+    margin-bottom: -10px;
+}
+
+.form-row {
+    display: flex;
+    gap: 30px;
+    margin-top: 27px;
+    margin-left: clamp(30px, 5vw, 100px);
+}
+
+.label-input-pair {
+    display: flex;
+    flex-flow: column nowrap;
+    width: clamp(15ch, 20vw, 35ch);
+}
+
+label {
+    padding-left: 1.5px;
+    font-size: .6rem;
+    text-transform: uppercase;
+    color: rgb(85, 82, 82);
+}
+
+input {
+    border-radius: 5px;
+    border: 1px solid rgb(24, 18, 18, .3);
 }
 
 .form-footer {
     height: var(--form-header-footer-height);
+}
+
+input:user-invalid {
+    border: 1px solid red;
+}
+
+:focus {
+    border: 1px solid blue;
 }

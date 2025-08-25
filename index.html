@@ -14,23 +14,51 @@
         </pre>
         <div class="banner">
             <div class="logo-left"></div>
-            <div class="banner-text">Sakunam Tennis</div>
+            <div class="banner-text" aria-hidden="true">Sakunam Tennis</div>
             <div class="logo-right"></div>
         </div>
     </div>
     <div class="form-side">
         <div class="form-header">
-            <div class="header-part-one">
+            <h1 class="header-part-one">
                 It's the perfect opportunity to improve your tennis skills! You know you need something like this in your life to help you realize your true potential.
                 <br>Sign up <em>now</em> to get started.</br>
-            </div>
-            <div class="header-part-two">
+            </h1>
+            <h1 class="header-part-two">
                 You <em>know</em> you want to.
-            </div>
+            </h1>
         </div>
         <form>
-            <div class="name-fields">
-
+            <h1 class="form-heading form-row">Let's do this!</h1>
+            <div class="name-fields form-row">
+                <div class="label-input-pair">
+                    <label for="first-name">First Name</label>
+                    <input type="text" name="first-name" id="full-name" placeholder="John" required>
+                </div>
+                <div class="label-input-pair">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" name="last-name" id="full-name" placeholder="Smith" required>
+                </div>
+            </div>
+            <div class="contact-info form-row">
+                <div class="label-input-pair">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="johnsmith@gmail.com" required>
+                </div>
+                <div class="label-input-pair">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" name="phone" id="phone" placeholder="XXX-XXX-XXXX" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                </div>
+            </div>
+            <div class="passwords form-row">
+                <div class="label-input-pair">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" min-length="8" max-length="20" placeholder="At least 8 characters" required>
+                </div>
+                <div class="label-input-pair">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" name="confirm-password" id="confirm-password" min-length="8" max-length="20" required>
+                </div>
             </div>
         </form>
         <div class="form-footer">
