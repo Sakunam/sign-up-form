@@ -1,11 +1,12 @@
 :root {
     --form-width: 55%;
+    --banner-font-size: calc(2vh + 2vw);
 }
 
 @font-face {
     font-family: 'Cheri Liney';
-    src: url('CheriLiney.woff2') format('woff2'),
-        url('CheriLiney.woff') format('woff');
+    src: url('../fonts/CheriLiney.woff2') format('woff2'),
+        url('../fonts/CheriLiney.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -13,8 +14,8 @@
 
 @font-face {
     font-family: 'Cheri';
-    src: url('Cheri.woff2') format('woff2'),
-        url('Cheri.woff') format('woff');
+    src: url('../fonts/Cheri.woff2') format('woff2'),
+        url('../fonts/Cheri.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -22,8 +23,8 @@
 
 @font-face {
     font-family: 'APOLLO';
-    src: url('APOLLO-Regular.woff2') format('woff2'),
-        url('APOLLO-Regular.woff') format('woff');
+    src: url('../fonts/APOLLO-Regular.woff2') format('woff2'),
+        url('../fonts/APOLLO-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -31,8 +32,8 @@
 
 @font-face {
     font-family: 'Paper Daisy DEMO';
-    src: url('PaperDaisyDEMO.woff2') format('woff2'),
-        url('PaperDaisyDEMO.woff') format('woff');
+    src: url('../fonts/PaperDaisyDEMO.woff2') format('woff2'),
+        url('../fonts/PaperDaisyDEMO.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -40,8 +41,8 @@
 
 @font-face {
     font-family: 'Simple Handmade';
-    src: url('SimpleHandmadeRegular.woff2') format('woff2'),
-        url('SimpleHandmadeRegular.woff') format('woff');
+    src: url('../fonts/SimpleHandmadeRegular.woff2') format('woff2'),
+        url('../fonts/SimpleHandmadeRegular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -49,8 +50,8 @@
 
 @font-face {
     font-family: 'DK Lemon Yellow Sun';
-    src: url('DKLemonYellowSun.woff2') format('woff2'),
-        url('DKLemonYellowSun.woff') format('woff');
+    src: url('../fonts/DKLemonYellowSun.woff2') format('woff2'),
+        url('../fonts/DKLemonYellowSun.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -58,9 +59,18 @@
 
 @font-face {
     font-family: 'DUMERO';
-    src: url('DUMERORegular.woff2') format('woff2'),
-        url('DUMERORegular.woff') format('woff');
+    src: url('../fonts/DUMERORegular.woff2') format('woff2'),
+        url('../fonts/DUMERORegular.woff') format('woff');
     font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Norse-Bold';
+    src: url('../fonts/Norse-Bold.woff2') format('woff2'),
+        url('../fonts/Norse-Bold.woff') format('woff');
+    font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
@@ -69,12 +79,13 @@
     display: flex;
     flex-flow: vertical nowrap;
     height: 100vh;
-    width: 100vh;
+    width: 100%;
     margin: 0;
 }
 
 .background-side {
     width: calc(100% - var(--form-width));
+    height: 100vh;
     background-image: url(../images/tennis_poster_background.jpg);
     background-size: 100% 100%;
     position: relative;
@@ -93,9 +104,63 @@
 
 .attribution {
     position: absolute;
-    bottom: 1%;
+    bottom: .5%;
     right: 2%;
-    font-size: .8rem;
+    font-size: .65rem;
+    text-align: right;
+}
+
+.banner {
+    font-family: "Norse-Bold";
+    font-size: var(--banner-font-size);
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: rgb(24, 18, 18, .3);
+    position: relative;
+    top: 10%;
+    padding: 1rem;
+}
+
+.banner-text {
+    margin: 0 3%;
+}
+
+.logo-left,
+.logo-right {
+    min-width: 10px;
+    width: calc(.5 * var(--banner-font-size));
+    height: calc(.5 * var(--banner-font-size));
+    background-image: url(../images/tennis_simple_logo_green.png);
+    background-size: 100% 100%;
+    margin-top: 1%;
+    border-radius: 50%;
+}
+
+.logo-left {
+    animation: spin-right 3s linear infinite;
+}
+
+.logo-right {
+    animation: spin-left 3s linear infinite;
+}
+
+@keyframes spin-right {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin-left {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
 }
 
 .description {
