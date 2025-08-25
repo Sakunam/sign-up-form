@@ -183,7 +183,7 @@
 }
 
 .form-header {
-    height: var(--form-header-footer-height);
+    height: calc(var(--form-header-footer-height) + 400px);
     font-family: "Inter Variable";
     background-color:rgb(245, 245, 245);
     display: flex;
@@ -202,10 +202,12 @@
 }
 
 form {
+    min-height: 250px;
     height: calc(100% - 2 * var(--form-header-footer-height));
     display: flex;
     flex-flow: column nowrap;
     font-family: "Inter Variable";
+    box-shadow: 0px 15px 15px 1px rgba(0, 0, 0, 0.2);
 }
 
 .form-heading {
@@ -237,10 +239,30 @@ label {
 input {
     border-radius: 5px;
     border: 1px solid rgb(24, 18, 18, .3);
+    font-family: "Inter Variable";
 }
 
 .form-footer {
     height: var(--form-header-footer-height);
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 75px 45px;
+}
+
+input[type="submit"] {
+    font-family: "Inter Variable";
+    color: white;
+    background-color: rgb(54, 54, 126);
+    padding: 10px 25px;
+    min-width: 150px;
+    max-width: 200px;
+    position: relative;
+    bottom: -75px;
+    left: 50px;
+}
+
+.log-in {
+    color: rgb(54, 54, 126);
 }
 
 input:user-invalid {
