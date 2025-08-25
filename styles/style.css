@@ -5,69 +5,6 @@
 }
 
 @font-face {
-    font-family: 'Cheri Liney';
-    src: url('../fonts/CheriLiney.woff2') format('woff2'),
-        url('../fonts/CheriLiney.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Cheri';
-    src: url('../fonts/Cheri.woff2') format('woff2'),
-        url('../fonts/Cheri.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'APOLLO';
-    src: url('../fonts/APOLLO-Regular.woff2') format('woff2'),
-        url('../fonts/APOLLO-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Paper Daisy DEMO';
-    src: url('../fonts/PaperDaisyDEMO.woff2') format('woff2'),
-        url('../fonts/PaperDaisyDEMO.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Simple Handmade';
-    src: url('../fonts/SimpleHandmadeRegular.woff2') format('woff2'),
-        url('../fonts/SimpleHandmadeRegular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'DK Lemon Yellow Sun';
-    src: url('../fonts/DKLemonYellowSun.woff2') format('woff2'),
-        url('../fonts/DKLemonYellowSun.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'DUMERO';
-    src: url('../fonts/DUMERORegular.woff2') format('woff2'),
-        url('../fonts/DUMERORegular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
     font-family: 'Norse-Bold';
     src: url('../fonts/Norse-Bold.woff2') format('woff2'),
         url('../fonts/Norse-Bold.woff') format('woff');
