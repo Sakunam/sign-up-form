@@ -119,11 +119,12 @@
     background-color: rgb(24, 18, 18, .3);
     position: relative;
     top: 10%;
-    padding: 1rem;
+    padding: 1rem 1rem .5rem 1rem;
 }
 
 .banner-text {
     margin: 0 3%;
+    text-align: center;
 }
 
 .logo-left,
