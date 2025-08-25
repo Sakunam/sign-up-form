@@ -1,6 +1,7 @@
 :root {
     --form-width: 55%;
     --banner-font-size: calc(2vh + 2vw);
+    --form-header-footer-height: 35%;
 }
 
 @font-face {
@@ -164,6 +165,28 @@
     }
 }
 
-.description {
-    
+.form-header {
+    height: var(--form-header-footer-height);
+    font-family: "APOLLO";
+    background-color:rgb(245, 245, 245);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    padding-left: 10%;
+}
+
+.header-part-one {
+    max-width: clamp(45ch, 30vw, 65ch);
+}
+
+.header-part-two {
+    margin: clamp(5%, 30px, 10%) 0;
+}
+
+form {
+    height: calc(100% - 2 * var(--form-header-footer-height));
+}
+
+.form-footer {
+    height: var(--form-header-footer-height);
 }
